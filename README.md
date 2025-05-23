@@ -26,8 +26,8 @@ This repository contains the completed **Task 2** of my APEX internship at **APE
 
 ## 🛠️ Tech Stack
 
-- **HTML5**
-- **CSS3**
+- **HTML**
+- **CSS**
 - **JavaScript**
 
 
