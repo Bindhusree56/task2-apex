@@ -30,14 +30,5 @@ This repository contains the completed **Task 2** of my APEX internship at **APE
 - **CSS3**
 - **JavaScript**
 
----
 
-## 📸 Screenshots
-
-<img src="screenshots/form.png" width="500" alt="Form with validation"/>
-<img src="screenshots/card.png" width="500" alt="Image card with delete option"/>
-
----
-
-## 📂 Folder Structure
 
