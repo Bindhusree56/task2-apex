@@ -2,20 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("userForm");
     if (form) {
         form.addEventListener("submit", (e) => {
+            e.preventDefault(); // Always prevent default at the start
+            
             const username = document.getElementById("username").value.trim();
             const email = document.getElementById("email").value.trim();
-            
-            // Regex to ensure email ends with '@gmail.com'
             const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
             if (username.length < 6) {
                 alert("Username must be at least 6 characters long.");
-                e.preventDefault();
             } else if (!gmailPattern.test(email)) {
                 alert("Only Gmail addresses are allowed (e.g., abc@gmail.com).");
-                e.preventDefault();
             } else {
                 console.log("Submitted successfully!");
+                window.location.href = "index2.html"; // Redirect only if valid
             }
         });
     }
