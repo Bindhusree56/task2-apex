@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Frames</title>
+</head>
+<link rel="stylesheet" href="style2.css">
+<body>
+    <h1>Silent Frames</h1><button onclick="addPic()">+ Add</button>
+    <!-- Modal Form -->
+<div class="modal" id="modal">
+  <h2>Add New Frame</h2>
+  <input type="text" id="titleInput" placeholder="Title" /><br><br>
+  <input type="text" id="urlInput" placeholder="Image URL" /><br><br>
+  <input type="file" id="fileInput" /><br><br>
+  <button onclick="addNewCard()">Add</button>
+  <button onclick="closeModal()">Cancel</button>
+</div>
+<div id="overlay" class="overlay" onclick="closeModal()"></div>
+    <div class="container">
+        <div class="card india">
+            <img src="https://res.cloudinary.com/dv1cjngnl/image/upload/v1746959199/A_pastel-toned_shot_of_the_Taj_Mahal_at_sunrise_with_soft_pinks_and_golds_in_the_sky._ztklhg.jpg">
+            <h3>INDIA</h3>
+            <button onclick="deleteElement(this)">delete</button>
+        </div>
+        <div class="card sri lanka">
+            <img src="https://res.cloudinary.com/dv1cjngnl/image/upload/v1746959203/A_golden-hour_photo_of_Sigiriya_Rock_Fortress_with_warm_tones_and_a_misty_background._swjkif.jpg">
+            <h3>Sri Lanka</h3>
+            <button onclick="deleteElement(this)">delete</button>
+        </div>
+        <div class="card usa">
+            <img src="https://res.cloudinary.com/dv1cjngnl/image/upload/v1746959199/A_muted_golden-hour_shot_of_the_Golden_Gate_Bridge_with_soft_oranges_and_blues._cpmf02.jpg">
+            <h3>USA</h3>
+            <button onclick="deleteElement(this)">delete</button>
+        </div>
+        <div class="card vietnam">
+            <img src="https://res.cloudinary.com/dv1cjngnl/image/upload/v1746959205/_Golden-hour_sunrise_over_Ha_Long_Bay_Vietnam_with_warm_orange_and_pink_tones_misty_limestone_peaks_5_4_aspect_ratio.__ldtw4r.jpg">
+            <h3>Vietnam</h3>
+            <button onclick="deleteElement(this)">delete</button>
+        </div>
+        <div class="card japan">
+            <img src="https://res.cloudinary.com/dv1cjngnl/image/upload/v1746959203/A_golden-hour_shot_of_Fushimi_Inari_Shrine_in_Kyoto_with_its_orange_torii_gates_glowing_softly._vxqvze.jpg">
+            <h3>Japan</h3>
+            <button onclick="deleteElement(this)">delete</button>
+        </div>
+        <div class="card mexico">
+            <img src="https://res.cloudinary.com/dv1cjngnl/image/upload/v1746959200/A_photo_of_Chichen_Itza_at_sunrise_with_warm_golden_tones_and_a_soft_sky_instead_of_the_poster_._kkcjat.jpg">
+            <h3>Mexico</h3>
+            <button onclick="deleteElement(this)">delete</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
